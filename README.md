@@ -1,4 +1,4 @@
-# jwt-pern-auth
+# todo-list-with-auth
 
 Authentication webpage made with JSON web token, postgreSQL, Express, ReactJS and NodeJS.
 
