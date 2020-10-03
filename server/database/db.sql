@@ -1,9 +1,8 @@
-CREATE DATABASE jwt-pern-auth;
+CREATE DATABASE todo_list_with_auth
 
 CREATE TABLE users(
-    id uuid PRIMARY KEY DEFAULT
-    uuid_generate_v4(),
-    name VARCHAR(255) NOT NULL,
-    email VARCHAR(255) NOT NULL,
-    password VARCHAR(255) NOT NULL
+    user_id uuid PRIMARY KEY DEFAULT uuid_generate_v4(),
+    user_name VARCHAR(255) NOT NULL,
+    user_email VARCHAR(255) NOT NULL,
+    user_password VARCHAR(255) NOT NULL
 );

@@ -4,9 +4,10 @@ const router = require("express").Router(),
 
 router.get("/", middleware.isAuthorized, async (req, res) => {
   try {
-    const user = await db.query("SELECT name, email FROM users WHERE id = $1", [
-      req.user,
-    ]);
+    const user = await db.query(
+      "SELECT user_name, user_email FROM users WHERE id = $1",
+      [req.user]
+    );
 
     res.json(user.rows[0]);
   } catch (err) {
