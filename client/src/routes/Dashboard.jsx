@@ -11,7 +11,7 @@ const Dashboard = () => {
   }, []);
   return (
     <Fragment>
-      <h1>Dashboard {user.name}</h1>
+      <h1>Dashboard {user.user_name}</h1>
       <Logout />
     </Fragment>
   );
